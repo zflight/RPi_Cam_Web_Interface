@@ -1,5 +1,5 @@
 <?php
-
+  include('cookiecheck.php');
   header("Content-Type: image/jpeg");
    if (isset($_GET["pDelay"]))
    {
@@ -9,5 +9,4 @@
    }
    usleep($preview_delay);
    readfile("/dev/shm/mjpeg/cam.jpg");
-
 ?>
